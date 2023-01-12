@@ -28,7 +28,8 @@ function resizeGrid() {
     let size = 0;
 
     do {
-        size = parseInt(prompt("Enter a new size: Must be 100 or below)"));
+        size = parseInt(prompt("Enter a new size: Must be between 10 and 100 inclusive)"));
+        console.log(size.toString());
       } while (size > 100);
 
     while (board.firstChild) {
